@@ -25,6 +25,8 @@ function App() {
       <header className="App-header">
         <p>I am a React person</p>
         <Person> </Person>
+        <Person> </Person>
+        <Person> </Person>
        
         
       </header>
@@ -33,8 +35,16 @@ function App() {
 }
 
 function Person(){
+  const personStyle ={
+    border: '2px solid yellow', 
+    margin:'10px'
+
+  }
   return (
-    <h1>Name: Sakib al Hasan</h1>
+    <div style={personStyle}>
+      <h1>Name: Sakib al  Hasan</h1>
+      <h3>Profession: Cricater  </h3>
+    </div>
   );
 }
 
